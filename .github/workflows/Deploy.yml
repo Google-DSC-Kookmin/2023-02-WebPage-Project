@@ -36,7 +36,7 @@ jobs:
 
       - name: Create New Branch and Commit Build Result
         run: |
-          cd build
+          cd project-front/build
           git init
           git checkout -b React-Front_$(date +'%Y.%m.%d.%H.%M.%S')
           git add .
