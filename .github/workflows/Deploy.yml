@@ -84,3 +84,6 @@ jobs:
           destination_repo: ${{ env.REPO }}
           destination_base_branch: 'main'
           destination_head_branch: ${{ env.BRANCH_NAME }}
+          user_email: "actions@github.com"
+          user_name: "[Bot] GitHub Actions"
+
