@@ -31,9 +31,8 @@ jobs:
       - name : Build React Page
         run: |
           cd project-front
-          ls
           npm install
-          npm rum build
+          CI=false npm rum build
 
       - name: Create New Branch and Commit Build Result
         run: |
