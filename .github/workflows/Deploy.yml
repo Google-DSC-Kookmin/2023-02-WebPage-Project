@@ -24,6 +24,10 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+          token: ${{ env.GITHUB_TOKEN }}
 
       - name: Setup Node
         uses: actions/setup-node@v4
