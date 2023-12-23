@@ -10,6 +10,9 @@ on:
     branches:
       - main
 
+permissions:
+  pull-requests: write
+
 env:
   GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
   REPO : "Google-DSC-Kookmin/Google-DSC-Kookmin.github.io"
@@ -65,6 +68,8 @@ jobs:
           github_token: ${{ env.GITHUB_TOKEN }}
           branch: ${{ env.BRANCH_NAME }}
           directory: second_repo
+          repository: ${{ env.REPO }}
+          
 
       - name: Create Pull Request
         uses: repo-sync/pull-request@v2
