@@ -82,8 +82,8 @@ jobs:
         with:
           source_folder: 'second_repo'
           destination_repo: ${{ env.REPO }}
-          destination_base_branch: 'main'
-          destination_head_branch: ${{ env.BRANCH_NAME }}
+          destination_base_branch: ${{ env.BRANCH_NAME }}
+          destination_head_branch: 'main'
           user_email: "actions@github.com"
           user_name: "[Bot] GitHub Actions"
 
