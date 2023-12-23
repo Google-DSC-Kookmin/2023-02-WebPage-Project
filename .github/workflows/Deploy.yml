@@ -14,6 +14,7 @@ env:
   GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
   PULL_SHA: ${{ github.event.pull_request.head.sha }}
   PULL_URL : ${{ github.event.pull_request.html_url }}
+  REPO : "Google-DSC-Kookmin/Google-DSC-Kookmin.github.io"
 
 jobs:
   Deploy_to_other_repo:
@@ -34,11 +35,20 @@ jobs:
           npm install
           CI=false npm rum build
 
+      - name: Checkout repository 2
+        uses: actions/checkout@v3
+        with:
+          repository: ${{ env.REPO }}
+          token: ${{ env.GITHUB_TOKEN }}
+          path: second_repo
+
       - name: Create New Branch and Commit Build Result
         run: |
-          cd project-front/build
-          git init
+          cd second_repo
+          git config user.email "actions@github.com"
+          git config user.name "[Bot] GitHub Actions"
           git checkout -b React-Front_$(date +'%Y.%m.%d.%H.%M.%S')
+          cp -r ../project-front/build/* .
           git add .
           git commit -m "Commit build result"
 
@@ -46,7 +56,7 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ env.GITHUB_TOKEN }}
-          repository: Google-DSC-Kookmin/Google-DSC-Kookmin.github.io
+          repository: ${{ env.REPO }}
           branch: React-Front_$(date +'%Y.%m.%d.%H.%M.%S')
           directory: build
 
