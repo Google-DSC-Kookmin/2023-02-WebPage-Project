@@ -30,6 +30,7 @@ jobs:
     
       - name : Build React Page
         run: |
+          ls
           npm install
           npm rum build
 
