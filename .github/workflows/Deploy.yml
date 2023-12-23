@@ -75,17 +75,10 @@ jobs:
           directory: second_repo
           repository: ${{ env.REPO }}
 
-      - name: Create pull request
-        uses: haiiliin/action-pull-request-another-repo@v1.0.3
-        env:
-          API_TOKEN_GITHUB: ${{ env.GITHUB_TOKEN }}
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
         with:
-          source_folder: 'second_repo'
-          destination_repo: '${{ env.REPO }}'
-          destination_folder: 'second_repo'
-          destination_base_branch: 'main'
-          destination_head_branch: '${{ env.BRANCH_NAME }}'
-          user_email: 'actions@github.com'
-          user_name: '[Bot] GitHub Actions'
-          pr_title: ${{ env.PR_TITLE }}
-          pr_body: ${{ env.PR_BODY }}
+          token: ${{ env.GITHUB_TOKEN }}
+          branch: ${{ env.BRANCH_NAME }}
+          title: ${{ env.PR_TITLE }}
+          body: ${{ env.PR_BODY }}
