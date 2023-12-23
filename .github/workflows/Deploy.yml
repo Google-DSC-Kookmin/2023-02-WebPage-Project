@@ -31,7 +31,7 @@ jobs:
         run: |
           cd project-front
           npm install
-          CI=false npm rum build
+          CI=false npm run build
 
       - name: Checkout repository 2
         uses: actions/checkout@v3
@@ -48,11 +48,7 @@ jobs:
 
       - name: Create New Branch and Commit Build Result
         run: |
-          echo "Test - 1"
-          ls
           cd second_repo
-          echo "Test - 2"
-          ls
           git config user.email "actions@github.com"
           git config user.name "[Bot] GitHub Actions"
           git checkout -b React-Front_$(date +'%Y.%m.%d.%H.%M.%S')
