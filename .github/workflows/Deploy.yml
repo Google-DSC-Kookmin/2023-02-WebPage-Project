@@ -1,9 +1,6 @@
 name: Deploy to Github Page Repository(Google-DSC-Kookmin.github.io)
 
 on:
-  push:
-    branches:
-      - github_Action # TODO : Delete (For debug)
   pull_request:
     types:
       - closed
