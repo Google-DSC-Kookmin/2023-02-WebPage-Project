@@ -3,7 +3,7 @@ name: Deploy to Github Page Repository(Google-DSC-Kookmin.github.io)
 on:
   push:
     branches:
-      - main  # TODO : Delete (For debug)
+      - github_Action # TODO : Delete (For debug)
   pull_request:
     types:
       - closed
@@ -30,6 +30,7 @@ jobs:
     
       - name : Build React Page
         run: |
+          cd project-front
           ls
           npm install
           npm rum build
