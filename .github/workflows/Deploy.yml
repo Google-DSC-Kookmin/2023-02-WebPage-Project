@@ -75,7 +75,7 @@ jobs:
           repository: ${{ env.REPO }}
 
       - name: Create pull request
-        uses: car-on-sale/action-pull-request-another-repo@version
+        uses: car-on-sale/action-pull-request-another-repo@v1.3.1
         env:
           API_TOKEN_GITHUB: ${{ env.GITHUB_TOKEN }}
         with:
