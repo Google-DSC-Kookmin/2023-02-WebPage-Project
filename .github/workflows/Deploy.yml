@@ -36,9 +36,12 @@ jobs:
       - name: Checkout repository 2
         uses: actions/checkout@v3
         with:
+          persist-credentials: false
+          fetch-depth: 0
           repository: ${{ env.REPO }}
           token: ${{ env.GITHUB_TOKEN }}
           path: second_repo
+  
 
       - name: Generate new branch name
         run: |
