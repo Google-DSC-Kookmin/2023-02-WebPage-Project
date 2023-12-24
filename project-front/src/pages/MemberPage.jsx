@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
-import Profile from './components/Profile';
+import Profile from '../components/Profile';
 
 const MemberPage = () => {
   return (
