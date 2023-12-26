@@ -6,9 +6,6 @@ on:
       - closed
     branches:
       - main
-  push:
-    branches:
-      - Github_Action_Test
 
 permissions:
   pull-requests: write
@@ -19,7 +16,7 @@ env:
 
 jobs:
   Deploy_to_other_repo:
-    if: (github.ref == 'refs/heads/Github_Action_Test') || ((contains(github.event.pull_request.labels.*.name, 'no update') == false && github.event.pull_request.merged == true))
+    # if: contains(github.event.pull_request.labels.*.name, 'no update') == false && github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
