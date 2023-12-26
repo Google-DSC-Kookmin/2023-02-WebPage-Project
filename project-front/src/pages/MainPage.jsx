@@ -122,7 +122,6 @@ const MainPage = () => {
                 <p>⚪ Done is better than Perfect<br />일을 끝내는 것이 완벽한 것보다 낫습니다</p>
             </Container>
         </Box>
-
     </>
     );
 };
