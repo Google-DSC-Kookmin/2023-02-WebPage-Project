@@ -11,8 +11,8 @@ import Button from '@mui/material/Button';
 import {Divider, Drawer, List, ListItem, ListItemButton, ListItemText} from "@mui/material";
 import {useNavigate} from "react-router-dom";
 
-const pages = ['Home', 'Activities', 'Member', 'Contact'];
-const paths = ['/', '/activities', '/members', '/contact'];
+const pages = ['Home', 'Activities', 'Member', 'Timeline','Contact' ];
+const paths = ['/', '/activities', '/members', '/timeline','/contact'];
 
 function AppNavBar() {
     const [anchorElNav, setAnchorElNav] = React.useState(false);

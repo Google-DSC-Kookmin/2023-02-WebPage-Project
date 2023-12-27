@@ -6,6 +6,7 @@ import './App.css';
 import AppNavBar from "./components/AppNavBar";
 import MainPage from "./pages/MainPage";
 import ContactPage from "./pages/ContactPage";
+import TimelinePage from "./pages/TimelinePage"
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
                     <Route path="/" element={<MainPage />} />
                     <Route path="/activities" element={<ActivityPage />} />
                     <Route path="/members" element={<MemberPage />} />
+                    <Route path="/timeline" element={<TimelinePage />} />
                     <Route path="/contact" element={<ContactPage />} />
                 </Routes>
           </div>
