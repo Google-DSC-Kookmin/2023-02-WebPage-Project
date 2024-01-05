@@ -1,0 +1,51 @@
+.body{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+}
+
+
+
+.greenBox{
+    background: linear-gradient(90deg, #f4d455 45%, #7dfca9 80%);
+    padding: 80px;
+    text-align: center;
+    width: 90%;
+    height: 500px;
+    margin-top: 70px;
+    color: #595959;
+}
+
+.act{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 120px;
+    text-shadow:
+    -1px -1px 3px whitesmoke,
+    1px -1px 3px whitesmoke,
+    -1px 1px 3px whitesmoke,
+    1px 1px 3px whitesmoke;
+}
+
+.nav1{
+    padding: 70px;
+}
+
+.nav__linkS {
+    margin: 120px;
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    
+}
+.nav__linkE {
+    color:white;
+    text-decoration: none;
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
