@@ -9,16 +9,18 @@
 
 
 .greenBox{
-    background: linear-gradient(90deg, #FCBC05 45%,#119D5A 80%);
+    background: linear-gradient(90deg, #f4d455 45%, #7dfca9 80%);
     padding: 80px;
     text-align: center;
-    width: 100%;
+    width: 90%;
     height: 500px;
     margin-top: 70px;
     color: #595959;
 }
 
 .act{
+    margin-top: 50px;
+    margin-bottom: 50px;
     font-size: 120px;
     text-shadow:
     -1px -1px 3px whitesmoke,
