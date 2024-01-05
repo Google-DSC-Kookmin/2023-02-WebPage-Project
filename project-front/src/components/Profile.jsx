@@ -1,33 +1,33 @@
 import React from 'react';
-
+import s from "../components/Style/memberPage.module.css";
 
 const Profile = () => {
     return (
         <>
-        <div className='profileCard'>
+        <div className={s.profileCard}>
             <header>
                 <main>
                 <img 
                 src='img/profile.png'
-                className = 'profile_image'
+                className = {s.profile_image}
                 />
                 </main>
                 
-                <span className='duty'>회장</span>
+                <span className={s.duty}>회장</span>
                 <img 
-                className="github_icon" 
+                className={s.github_icon} 
                 src='img/githubicon.png' />
             </header>
             <main>
-                <span className='name'>이정안</span>
-                <span className='position'>프론트엔드</span>
-                <span className="ment">아자아자 화이팅!</span>
+                <span className={s.name}>이정안</span>
+                <span className={s.position}>프론트엔드</span>
+                <span className={s.ment}>아자아자 화이팅!</span>
             </main>
             <footer>
                 <img 
-                className='mailicon'
+                className={s.mailicon}
                 src='img/mailicon.png'/>
-                <span className='mail'>abcde@gmail.com</span>
+                <span className={s.mail}>abcde@gmail.com</span>
             </footer>
        </div>
         </>
