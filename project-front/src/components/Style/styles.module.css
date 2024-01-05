@@ -19,7 +19,7 @@
 }
 
 .act{
-    font-size: 90px;
+    font-size: 120px;
     text-shadow:
     -1px -1px 3px whitesmoke,
     1px -1px 3px whitesmoke,
@@ -28,22 +28,22 @@
 }
 
 .nav1{
-    padding: 50px;
+    padding: 70px;
 }
 
-.nav__link-s {
+.nav__linkS {
     margin: 120px;
     color: white;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 50px;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     
 }
-.nav__link-e {
+.nav__linkE {
     color:white;
     text-decoration: none;
     color: white;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 50px;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }

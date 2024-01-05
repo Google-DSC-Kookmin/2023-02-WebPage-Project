@@ -14,18 +14,18 @@ const ActivityPage = () => {
           <div className={customStyle1.greenBox}>
               <div className={customStyle1.act}>Activities</div>
               <nav className={customStyle1.nav1}>
-                  <ul className={customStyle1.nav__linkE}>
-                      <a className={customStyle1.nav__linkS} href="seminars.html">
+                  <ul className={customStyle1.nav__link}>
+                      <a className={customStyle1.nav__linkS}>
                           Seminars
                       </a>
-                      <a className={customStyle1.nav__linkS} href="sessions.html">
+                      <a className={customStyle1.nav__linkS}>
                           Sessions
                       </a>
                   </ul>
               </nav>
               <nav className={customStyle1.nav2}>
-                  <ul className={customStyle1.nav__linkS}>
-                      <a className={customStyle1.nav__linkE} href="expect.html">
+                  <ul className={customStyle1.nav__link}>
+                      <a className={customStyle1.nav__linkE}>
                           Expected Event
                       </a>
                   </ul>
