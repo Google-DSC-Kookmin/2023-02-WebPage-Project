@@ -36,11 +36,27 @@ header{
     justify-content: center;
     align-items: center;
   }
-  
+
+  .main_image {
+    display: flex;
+    justify-content: center;
+}
+
+  @media (max-width: 768px) {
+    .main_image img {
+        /* 적절한 크기로 조절 */
+        max-width: 50%; /* 예시로 80% 설정 */
+    }
+  }
+
   .memeber_main_image{
     max-width: 100%; /* 이미지가 부모 요소에 맞게 조절되도록 최대 너비 지정 */
     height: auto;
+    display: block; /* 이미지를 블록 요소로 설정하여 가운데 정렬을 용이하게 함 */
+    margin: 0 auto;
   }
+
+
   
   
   .num_member{
@@ -127,14 +143,15 @@ header{
   
   .profile_image{
     position:absolute;
-    width: 50%;
-    height: 50%;
+    width: 40%;
+    height: 40%;
     border-radius: 100%;
-    top:5%;
-    left:5%;
+    top:10%;
+    left:10%;
   }
   
   .github_icon{
+    cursor: pointer;
     position: absolute;
     width: 15%;
     height: 15%;
@@ -142,25 +159,44 @@ header{
     right:5%;
   }
   
-  .duty{
-    position:absolute;
-    top:45%;
-    left:60%;
-    color: #4D4D4D;
-    font-family: Inter;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+  /* 기본 스타일 */
+.duty {
+  color: #4D4D4D;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: 2px solid gray;
+  border-radius: 10%;
+  /* 기본 스타일 등 추가 */
+}
+
+/* 미디어 쿼리를 활용하여 작은 화면 크기에 대한 스타일 정의 */
+@media (max-width: 768px) {
+  .duty {
+      font-size: 9px;
+      /* 다른 작은 화면에 대한 스타일 수정 */
   }
+}
+
+/* 포지션을 세로로 나열하기 위한 스타일 */
+.dutyContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position:relative;
+  left:30%;
   
-  @media (max-width: 768px) {
-    .duty{
-      font-size: 12px;
-    
-    }
-  }
-  
+}
+
+/* Position 요소들을 감싸는 .dutyContainer의 추가적인 스타일 */
+.dutyContainer {
+  padding-top: 24%; /* 간격을 조정할 수 있습니다. */
+  /* 외곽선을 추가할 수 있습니다. */
+  margin-bottom: 20px; /* 요소 사이의 간격을 조정할 수 있습니다. */
+}
+
   .name{
     position: absolute;
     top:60%;
@@ -223,7 +259,7 @@ header{
   .mailicon{
     position:absolute;
     top:90%;
-    left:46%;
+    left:10%;
     width: 5%;
     height: auto;
   }
@@ -233,7 +269,7 @@ header{
   .mail{
     position:absolute;
     top:90%;
-    left:53%;
+    left:16%;
     width: 42%;
     height: 5%;
     flex-shrink: 0;
