@@ -1,0 +1,70 @@
+@import "reset.module.css";
+.bx {
+    margin: 30px;
+    border: 2px solid #7474;
+    border-radius: 10px;
+    height: 80vh;
+    position: relative;
+
+}
+.bx-graybx {
+    margin-top: 10%;
+    margin-left: calc((100% - 60vh) / 2);;
+    width: 60vh;
+    height: 20vh;
+    border-radius: 10px;
+    background-color: #E4E4E4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bx-graybx-apply{
+    text-decoration: none;
+    color: black;
+    font-size: 50px;
+    font-weight: bolder;
+}
+.bx-word1{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #747474;
+    font-weight: bold;
+
+}
+
+.bx-word2{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #595959;
+    font-weight: bolder;
+    font-size: 35px;
+}
+@media screen and (max-width: 768px) {
+    .bx {
+      margin: 10px;
+    }
+  
+    .bx-graybx {
+      margin-top: 5%;
+      margin-left: 30%;
+      width: 40%;
+    }
+  
+    .bx-graybx-apply {
+      font-size: 30px;
+    }
+  
+    .bx-word1 {
+      margin-top: 30px;
+      font-size: 16px;
+    }
+  
+    .bx-word2 {
+      margin-top: 15px;
+      font-size: 20px;
+    }
+  }
