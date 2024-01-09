@@ -1,6 +1,6 @@
 import React from 'react';
 import jsonData from '../Data/memberData23_24.json';
-import style from '../components/Style/page2.module.css'; // 스타일 모듈 불러오기
+import style from '../components/Style/timeline.module.css'; // 스타일 모듈 불러오기
 
 const TimelineItem = ({ name, githubLink }) => (
   <div className={style['timeline__Data']}>

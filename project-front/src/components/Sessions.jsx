@@ -1,19 +1,17 @@
 import React from 'react';
-
+import { Icon } from '@iconify/react';
 import customStyle2 from "../components/Style/page2.module.css";
 
 const Sessions = () => {
     return (
         <>
             <header className={customStyle2.screen_header}>
-                <h1 className={customStyle2.screen_header__title}>Sessions</h1>
-                <div className={customStyle2.screen_header__icon}>
-                    <span><iconify-icon icon="mdi:book-multiple" /></span>
-                </div>
+                <h1 className={customStyle2.screen_header__title}>
+                    Sessions
+                </h1>
             </header>
             
             <div className={customStyle2.screen_header__underline} />
-            
             <div className={customStyle2.screen_header}>
                 <div className={customStyle2.screen_header__text}>
                     <a className={customStyle2.screen_header__text_bold}>GDSC Kookmin Sessions List</a>
@@ -26,24 +24,21 @@ const Sessions = () => {
             </div>
             <div className={customStyle2.session_circle}>
                 <div className={customStyle2.session_text}>
-                    <a className={customStyle2.session_text__a}>FRONT-END</a>
+                    <a className={customStyle2.session_text__a}href="https://www.notion.so/jinjae/Frontend-fce3da30f7ae4b44a730bd97d74d065f">FRONT-END</a>
                 </div>
                 <div className={customStyle2.session_text}>
-                    <a className={customStyle2.session_text__a}>AI</a>
+                    <a className={customStyle2.session_text__a}href="https://www.notion.so/jinjae/AI-fd44856b6cbf43d1a9c588466fa01595">AI</a>
                 </div>
                 <div className={customStyle2.session_text}>
-                    <a className={customStyle2.session_text__a}>PROJECT</a>
+                    <a className={customStyle2.session_text__a}href="https://www.notion.so/jinjae/Project-c70c4ff20fb44b9c8a1d55a527a929ab">PROJECT</a>
                 </div>
             </div>
             <div className={customStyle2.session_repo}>
                 <a className={customStyle2.session_repo__text}>Repository</a>
-                <span className={customStyle2.session_repo__icon}>
-                    <iconify-icon icon="ph:mouse-simple-bold" />
-                </span>
             </div>
             <div className={customStyle2.session_year}>
-                <a className={customStyle2.session_year__text} href="#">2022 - 2023</a>
-                <a className={customStyle2.session_year__text} href="#">2023 - 2024</a>
+                <a className={customStyle2.session_year__text} href="https://www.notion.so/jinjae/Archive-43b794d544204eeb95361d68908be05b">2022 - 2023</a>
+                <a className={customStyle2.session_year__text} href="https://www.notion.so/jinjae/GDSC-Kookmin-09465fd719fe4eb1b8a5ebdbae2b4e63">2023 - 2024</a>
             </div>
         </>
     )
