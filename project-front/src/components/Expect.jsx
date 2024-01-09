@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Icon } from '@iconify/react';
 import customStyle2 from "../components/Style/page2.module.css";
 
 const Expect = () => {
@@ -9,11 +9,6 @@ const Expect = () => {
                 <h1 className={customStyle2.screen_header__title} style={{ marginLeft: 110 }}>
                     Expected Events
                 </h1>
-                <div className={customStyle2.screen_header__icon}>
-      <span>
-        <iconify-icon icon="bi:list-task" />
-      </span>
-                </div>
             </header>
             <div className={customStyle2.screen_header__underline} />
             <div className={customStyle2.expect_text}>

@@ -15,17 +15,17 @@ const ActivityPage = () => {
               <div className={customStyle1.act}>Activities</div>
               <nav className={customStyle1.nav1}>
                   <ul className={customStyle1.nav__link}>
-                      <a className={customStyle1.nav__linkS1}>
+                      <a className={customStyle1.nav__linkS1} href="">
                           Seminars
                       </a>
-                      <a className={customStyle1.nav__linkS2}>
+                      <a className={customStyle1.nav__linkS2} href="#">
                           Sessions
                       </a>
                   </ul>
               </nav>
               <nav className={customStyle1.nav2}>
                   <ul className={customStyle1.nav__link}>
-                      <a className={customStyle1.nav__linkE}>
+                      <a className={customStyle1.nav__linkE} href="#">
                           Expected Event
                       </a>
                   </ul>
