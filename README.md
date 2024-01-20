@@ -11,5 +11,3 @@
 - Pull Request를 이용한 Merge가 일어나지 않는 경우(Main으로 바로 Push하는 경우), Github Action이 실행되지 않습니다.
 - Pull Request에 "no update" Tag가 있는 경우, Github Action이 실행되지 않습니다.
 
-## 🧑‍🤝‍🧑 참여자 
-- 이동국 김세현 이세영 이정안 이혁규 정일형
