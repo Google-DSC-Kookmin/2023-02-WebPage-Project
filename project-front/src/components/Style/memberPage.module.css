@@ -169,7 +169,6 @@ header{
   line-height: normal;
   border: 2px solid gray;
   border-radius: 10%;
-  /* 기본 스타일 등 추가 */
 }
 
 /* 미디어 쿼리를 활용하여 작은 화면 크기에 대한 스타일 정의 */
@@ -186,7 +185,7 @@ header{
   flex-direction: column;
   align-items: flex-start;
   position:relative;
-  left:30%;
+  left:35%;
   
 }
 
@@ -238,7 +237,7 @@ header{
   .ment{
     position:absolute;
     top:70%;
-    left:42px;
+    left:13%;
     width: 72%;
     height: 15%;
     flex-shrink: 0;
