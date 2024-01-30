@@ -9,6 +9,7 @@ on:
   push:
     branches:
       - Github_Action_Test
+  workflow_dispatch: # 수동 트리거 활성화
 
 permissions:
   pull-requests: write
@@ -19,7 +20,10 @@ env:
 
 jobs:
   Deploy_to_other_repo:
-    if: (github.ref == 'refs/heads/Github_Action_Test') || ((contains(github.event.pull_request.labels.*.name, 'no update') == false && github.event.pull_request.merged == true))
+    if: >-
+      github.event_name == 'workflow_dispatch' || 
+      (github.ref == 'refs/heads/Github_Action_Test') || 
+      ((contains(github.event.pull_request.labels.*.name, 'no update') == false && github.event.pull_request.merged == true))
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
