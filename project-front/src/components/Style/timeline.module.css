@@ -25,6 +25,14 @@
 @media screen and (max-width: 768px) {
     .timeline {
       font-size: 40px;
-      margin-left: 10px;
+      display: flex;
+      align-items: center;
+    }
+    .commit_list{
+      padding: 1.5vh;
+    }
+    .commit {
+      display: flex;
+      margin-left: 0;
     }
   }

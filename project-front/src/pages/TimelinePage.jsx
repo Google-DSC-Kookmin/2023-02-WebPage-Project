@@ -32,7 +32,7 @@ function TimelinePage() {
           <div className={style.timeline}>Timelines</div>
           <ul>
               {recentCommits.map((commit, index) => (
-                  <li key={index}>
+                  <li className={style.commit_list} key={index}>
                       <p className={style.commit}>🔥{commit.userName}님은 {commit.commitTime}에 {commit.commitMessage}를 작업했습니다</p>
                       <a className={style.commit_link} href={commit.commitLink} target="_blank" rel="noopener noreferrer">📁 Commit 보러가기</a>
                   </li>
