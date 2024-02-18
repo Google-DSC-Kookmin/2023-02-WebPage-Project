@@ -2,64 +2,66 @@
 
 .timeline{
     color: #4285F5;
-    font-size: 60px;
+    font-size: 4vw;
     font-weight: bolder;
     text-decoration: none;
-    margin-left: 30vh;
+    margin-left: 20vh;
     margin-top: 10vh;
-    margin-bottom: 70px;
+    margin-bottom: 5vh;
 }
-.timeline__Data{
-    margin-left: 40vh;
-    font-size: 25px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-bottom: 20px;
+.commit_list{
+  font-size: 2vw;
 }
-.nameData {
-    width: 75px;
-    display: inline-block;
-    justify-content: center;
+.commit{
+  color: rgb(100, 100, 100);
+  display: flex;
+  margin-left: 20vh;
 }
-.repositoryData {
-    display: inline-block;
-    background-color: #4285F5;
-    width: 200px;
-    height: 35px;
-    display: inline-block;
-    border-radius: 7px;
-    text-decoration: none;
-}
-a {
+.commit_link{
   text-decoration: none;
-  color: white;  
-  font-weight: bold;
-  margin-left: 40px;
+  color: white;
+  background-color: #4285F5;
+  border-radius: 15px;
+  width: 17vw;
 }
+.commit_link:hover{
+  background-color: #184fac;
+}
+.commit_time{
+  color: rgb(57, 57, 57);
+  display: flex;
+  margin-left: 22vh;
+}
+
 @media screen and (max-width: 768px) {
     .timeline {
-      font-size: 40px;
-      margin-left: 10px;
+      font-size: 6vw;
+      display: flex;
     }
-  
-    .timeline__Data {
-      margin-left: 10px;
-      font-size: 18px;
+    .commit_list{
+      padding: 1.0vh;
     }
-  
-    .nameData {
-      text-align: center;
-      margin-bottom: 10px;
-      width: 55px;
+    .commit{
+      font-size: 2.5vw;
     }
-  
-    .repositoryData {
-      margin-top: 10px;
-      width: 110px;
-      height: 25px;
+  }
+  @media screen and (max-width: 425px) {
+    .timeline{
+      margin-top: 5vh;
+      margin-bottom: 2vh;
+      font-size: 8vw;
+      display: flex;
+      margin-left: 5vw;
     }
-  
-    a {
-      margin-left: 10px;
+    .commit_list{
+      display: flex;
+      flex-direction: column;
     }
+    .commit,.commit_time{
+      display: flex;
+      margin-left: 3.8vw;
+      font-size: 3vw;
+      font-weight: bold;
+    }
+    
   }

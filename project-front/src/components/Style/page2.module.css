@@ -10,9 +10,8 @@
 }
 
 
-
 .actBackground{
-    background: linear-gradient(90deg, #f4d455 45%, #7dfca9 80%);
+    background: linear-gradient(90deg, #FCBC05 45%, #119D5A 80%);
     padding: 80px;
     text-align: center;
     width: auto;
@@ -26,10 +25,10 @@
     margin-bottom: 50px;
     font-size: 120px;
     text-shadow:
-    -1px -1px 3px whitesmoke,
-    1px -1px 3px whitesmoke,
-    -1px 1px 3px whitesmoke,
-    1px 1px 3px whitesmoke;
+        -2px -2px 5px whitesmoke,
+        2px -2px 5px whitesmoke,
+        -2px 2px 5px whitesmoke,
+        2px 2px 5px whitesmoke;
 }
 
 .nav1{
@@ -62,9 +61,9 @@
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 @media screen and (max-width: 768px) {
-    .greenBox {
+    .actBackground {
       padding: 40px;
-      height: auto;
+      height: 60vh;
     }
   
     .act {
@@ -84,6 +83,26 @@
       font-size: 30px;
     }
   }
+@media screen and (max-width: 426px) {
+    .actBackground{
+        height: 60vh;
+    }
+    .act{
+        font-size: 15vw;
+        margin-bottom: 0;
+    }
+    .nav__link{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .nav__linkS1,
+    .nav__linkS2,
+    .nav__linkE {
+      font-size: 5vw;
+    }
+    
+}
 
 /* Seminars Page */
 
@@ -158,7 +177,7 @@
     margin-right : auto;
     margin-top:40px;
 }
-.seminar-previous__text{
+.seminar_previous__text{
     font-size: 25px;
     font-weight: 600;
     text-decoration: none;
@@ -199,9 +218,31 @@
     .box__explain {
         font-size: 2vw;
     }
-    
+    .seminar_previous{
+        height: 8vh;
+    }
+    .seminar_previous__text{
+        font-size: 1.8vw;
+    }
   }
 
+  @media screen and (max-width: 530px) {
+    .container__box{
+        height: 10vh;
+    }
+    .seminar_previous{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 5vh;
+        width: 25vw;
+        margin-top: 2vh;
+    }
+    .seminar_previous__text{
+        font-size: 2.5vh;
+    }
+
+  }
   /* Session Page */
 .session_header {
     margin-top: 20px;
@@ -257,6 +298,8 @@
 .session_text__a{
     -webkit-text-stroke-color: #119D5A;
     -webkit-text-stroke-width: 2px;
+    text-decoration: none;
+    color: white;
 }
 .session_repo {
     margin-left: 250px;
@@ -283,11 +326,16 @@
 .session_year__text{
     color: white;
     padding-left: 50px;
-    margin-left: 200px;
     text-decoration: none;
     font-weight: 600;
 }
 @media screen and (max-width: 1111px) {
+    .session_header__text{
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+        margin-left: 10vw;
+    }
     .session_circle{
         margin-top: 20px;
         display: flex;
@@ -295,13 +343,16 @@
         align-items: center;
         justify-content: center;
     }
-    .session_text{
-        border-radius: 0%;
+    .session_text{ 
         width: 50vw;
         height: 30vh;
         margin-bottom: 10px;
+        border-radius: 10vh;
+        font-size: 7vw;
     }
-    
+    .session_repo{
+        margin-left: 10vw;
+    }
 }
 
 .expect_text {
@@ -323,4 +374,9 @@
     margin-bottom: 30px;
     font-weight: bold;
     color: #595959;
+}
+@media screen and (max-width: 768px) {
+    .expect_text{
+        margin-left: 0;
+    }
 }
