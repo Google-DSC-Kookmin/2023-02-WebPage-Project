@@ -17,7 +17,9 @@ function TimelinePage() {
                         if (!uniqueUsers[commit.userName] && recentCommitsData.length < 10) {
                             uniqueUsers[commit.userName] = true;
                             const formattedDate = new Date(commit.commitTime).toISOString().split('T')[0];
-                            recentCommitsData.push({ ...commit, commitTime: formattedDate });
+                            const repositoryName = commit.commitLink.split("/repos/")[1].split("/commits")[0];
+                            const repositoryUrl = `https://github.com/${repositoryName}`;
+                            recentCommitsData.push({ ...commit, commitTime: formattedDate, repositoryUrl });
                         }
                     });
                 });
@@ -28,18 +30,18 @@ function TimelinePage() {
     }, []);
 
     return (
-      <div>
-          <div className={style.timeline}>Timelines</div>
-          <ul>
-              {recentCommits.map((commit, index) => (
-                  <li className={style.commit_list} key={index}>
-                      <p className={style.commit}>🔥{commit.userName}님은 {commit.commitTime}에 {commit.commitMessage}를 작업했습니다</p>
-                      <a className={style.commit_link} href={commit.commitLink} target="_blank" rel="noopener noreferrer">📁 Commit 보러가기</a>
-                  </li>
-              ))}
-          </ul>
-      </div>
-  );
+        <div>
+            <div className={style.timeline}>Timelines</div>
+            <ul>
+                {recentCommits.map((commit, index) => (
+                    <li className={style.commit_list} key={index}>
+                        <p className={style.commit_time}>{commit.commitTime}</p>
+                        <p className={style.commit}>🔥{commit.userName}님은 <a className={style.commit_link} href={commit.repositoryUrl} target="_blank" rel="noopener noreferrer">Repository</a>를 작업중입니다. </p>
+                    </li>
+                ))}
+            </ul>
+        </div>
+    );
 }
 
 export default TimelinePage;
