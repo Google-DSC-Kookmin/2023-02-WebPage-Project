@@ -7,7 +7,7 @@ const ContactPage = () => {
       <div className={style['bx-graybx']}>
         <a className={style['bx-graybx-apply']}>지원하기</a>
       </div>
-      <a className={style['bx-word1']}>GDSC Kookmin 에 궁금한 점이 있으시면 아래 메일로 문의 주시기 바랍니다.</a>
+      <a className={style['bx-word1']}>GDSC Kookmin에 궁금한 점이 있으시면 아래 메일로 문의 주시기 바랍니다.</a>
       <a className={style['bx-word2']}>
         gdsc.kookmin@gmail.com
       </a>

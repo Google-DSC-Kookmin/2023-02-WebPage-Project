@@ -16,8 +16,8 @@ const Sessions = () => {
                 <div className={customStyle2.session_header__text}>
                     <a className={customStyle2.session_header__text_bold}>GDSC Kookmin Sessions List</a>
                     <a className={customStyle2.session_header__text_thin}>
-                        기술 파트별 소속 구성원이 매주 정해진 시간에 모여 세션을 진행합니다.
-                        <br /> 각 세션은 Seminar에 참여 시 진행 상황이나 새로 배운 내용을 간단히
+                    📗기술 파트별 소속 구성원이 매주 정해진 시간에 모여 세션을 진행합니다.
+                        <br /> 📗각 세션은 Seminar에 참여 시 진행 상황이나 새로 배운 내용을 간단히
                         공유합니다.
                     </a>
                 </div>

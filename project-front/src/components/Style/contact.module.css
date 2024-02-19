@@ -68,3 +68,16 @@
       font-size: 20px;
     }
   }
+  @media screen and (max-width: 426px) {
+
+    .bx-graybx{
+      height: 10vh;
+    }
+    .bx-graybx-apply{
+      font-size: 5vw;
+    }
+    .bx-word1{
+      padding: 1vw;
+      font-size: 5vw;
+    }
+  }

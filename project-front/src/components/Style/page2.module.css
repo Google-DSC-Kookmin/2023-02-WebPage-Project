@@ -19,16 +19,22 @@
     margin-top: 70px;
     color: #595959;
 }
-
-.act{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-size: 120px;
+/* -webkit-text-stroke-color: #119D5A;
+    -webkit-text-stroke-width: 2px; 
+    
     text-shadow:
         -2px -2px 5px whitesmoke,
         2px -2px 5px whitesmoke,
         -2px 2px 5px whitesmoke,
         2px 2px 5px whitesmoke;
+*/
+.act{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 120px;
+    font-weight: 1000;
+    -webkit-text-stroke-color: #fdfdfd;
+    -webkit-text-stroke-width: 4px;
 }
 
 .nav1{
@@ -85,11 +91,13 @@
   }
 @media screen and (max-width: 426px) {
     .actBackground{
-        height: 60vh;
+        height: 45vh;
     }
     .act{
         font-size: 15vw;
         margin-bottom: 0;
+        -webkit-text-stroke-color: white;
+        -webkit-text-stroke-width: 2px;
     }
     .nav__link{
         display: flex;
@@ -130,7 +138,7 @@
 }
 .seminar_p{
     margin-top: 30px;
-    margin-left: 100px;
+    margin-left: 15vw;
     line-height: 2.0;
     font-weight: bolder;
     color: #595959;
@@ -220,13 +228,14 @@
     }
     .seminar_previous{
         height: 8vh;
+        width: 13vw;
     }
     .seminar_previous__text{
         font-size: 1.8vw;
     }
   }
 
-  @media screen and (max-width: 530px) {
+  @media screen and (max-width: 720px) {
     .container__box{
         height: 10vh;
     }
@@ -235,13 +244,27 @@
         flex-direction: column;
         justify-content: center;
         height: 5vh;
-        width: 25vw;
+        width: 30vw;
         margin-top: 2vh;
     }
     .seminar_previous__text{
         font-size: 2.5vh;
     }
-
+  }
+  @media screen and (max-width: 500px) {
+    .box__title{
+        font-size: 4.5vw;
+    }
+    .box__explain{
+        font-size: 3vw;
+    }
+    .container .container__box:nth-child(2) {
+        height: 18vh;
+      }
+    .container .container__box:nth-child(3) {
+        height: 15vh;
+      }
+    
   }
   /* Session Page */
 .session_header {
@@ -296,7 +319,7 @@
     background-color: #119D5A;
 }
 .session_text__a{
-    -webkit-text-stroke-color: #119D5A;
+    -webkit-text-stroke-color: #0c683b;
     -webkit-text-stroke-width: 2px;
     text-decoration: none;
     color: white;
@@ -352,6 +375,11 @@
     }
     .session_repo{
         margin-left: 10vw;
+    }
+}
+@media screen and (max-width:440px) {
+    .session_text{
+        height: 15vh;
     }
 }
 
