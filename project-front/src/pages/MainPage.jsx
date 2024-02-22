@@ -1,10 +1,26 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
 
 import style from "../components/Style/text.module.css";
+import {useNavigate} from "react-router-dom";
 
 const MainPage = () => {
+    const redirectNavigate = useNavigate();
+
+    useEffect(() => {
+        const search = window.location.search;
+        const params = new URLSearchParams(search);
+
+        params.forEach((value, key) => {
+            console.log(key, value)
+            if(key === "redirect_path") {
+                console.log("Check!")
+                redirectNavigate(value);
+            }
+        });
+    }, []);
+
     return (
     <>
         <Box textAlign={"center"}>
